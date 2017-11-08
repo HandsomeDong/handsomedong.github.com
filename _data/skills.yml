@@ -1,0 +1,11 @@
+- name: PHP MySQL
+  percent: 30
+
+- name: UI/UX Design
+  percent: 25
+
+- name: Bootstrap
+  percent: 15
+
+- name: Python
+  percent: 100
