@@ -27,8 +27,8 @@
     <div class="container text-center">
         <h1>Categories</h1>
         <div class="row">
-            {% for category in site.posts %}
-            <div class="col-md-4">{{ category.title }}</div>
+            {% for category in site.data.catagories %}
+            <div class="col-md-4">{{ category.name }}</div>
             {% endfor %}
         </div>
 
