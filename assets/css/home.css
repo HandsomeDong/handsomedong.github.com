@@ -18,3 +18,7 @@
 .bg-grey{
     background-color: #f7f7f7;
 }
+
+.vertical-center{
+align-items: center;
+}
