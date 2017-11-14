@@ -12,6 +12,8 @@ for f in onlyfiles:
             break
 print(categories)
 
-output = open('./_data/catagories.yml', '+w')
 for cate in categories:
-    output.write('- name: ' + cate + '\n\n')
+    output = open('./_post_categories/'+cate+'.markdown', 'w')
+    output.write('--- \n')
+    output.write('name: ' + cate + '\n')
+    output.write('--- \n')
