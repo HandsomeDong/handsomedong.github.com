@@ -44,7 +44,7 @@
                 <div class="row">
                     <h6 class="h5 col-md-12">{{ post.title }}</h6>
                     <div class="col-md-12 text-muted">
-                        <small> {{post.excerpt| slice: 0,300}}......</small>
+                        <small> {{post.excerpt| slice: 0,200|strip_html| strip | append: "......"}}</small>
                     </div>
                     <div class="blog-date col-md-3 offset-md-9">
                         <small>{{post.date|date: '%B %d, %Y'}}</small>
@@ -54,7 +54,7 @@
             </a>
 
             {% endfor %}
-            <a class="h6 blog-list col-md-8 offset-md-2 d-flex text-center" href="{{ post.url }}" style="height: 100px;">
+            <a class="h6 blog-list col-md-8 offset-md-2 d-flex text-center" href="/pages" style="height: 100px;">
                 <h5>More Blogs</h5>
             </a>
         </div>
