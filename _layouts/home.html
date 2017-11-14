@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Shengdong Lu</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="personal tech IT">
-	<meta name="description" content="Shengdong Lu's personal homepage">
+    <meta charset="utf-8">
+    <title>Shengdong Lu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="personal tech IT">
+    <meta name="description" content="Shengdong Lu's personal homepage">
 
-	<!-- stylesheet css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/home.css">
+    {% include header.html %}
+
 
 </head>
 <body class="bg-light">
@@ -20,40 +19,59 @@
         <h1 class="jumbotron-heading ">Shengdong Lu's Blog</h1>
         <p class="lead text-white">I found that I am bad at remember. I build this blog to keep and share the interesting knowledge that I learn. </p>
     </div>
-    </div>
+</div>
 </div>
 
 <section id="categories" class="bg-grey">
-    <div class="container text-center">
-        <h1>Categories</h1>
+    <div class="container">
+        <h1 class="section-header text-center">Categories</h1>
+        <hr>
         <div class="row">
-            {% for category in site.posts %}
-            <div class="col-md-4 d-flex vertical-center">{{ category.title }}</div>
+            {% for category in site.categories %}
+            <a class="h3 link-block col-md-3 d-flex vertical-center text-center" href="/post_categories/{{ category|first }}" style="height: 200px;">{{ category|first }}</a>
             {% endfor %}
         </div>
+    </div>
+</section>
 
+<section id="blogs" class="bg-dark text-light">
+    <div class="container ">
+        <div class="h1 section-header text-center">Blogs</div>
+        <hr>
+        <div class="row">
+            {% for post in site.posts limit:5 %}
+            <a class="h6 blog-list col-md-8 offset-md-2 d-flex vertical-center" href="{{ post.url }}" style="height: 100px;">
+                <div class="row">
+                    <h6 class="h5 col-md-12">{{ post.title }}</h6>
+                    <div class="col-md-12 text-muted">
+                        <small> {{post.excerpt| slice: 0,200|strip_html| strip | append: "......"}}</small>
+                    </div>
+                    <div class="blog-date col-md-3 offset-md-9">
+                        <small>{{post.date|date: '%B %d, %Y'}}</small>
+                    </div>
+                </div>
 
+            </a>
+
+            {% endfor %}
+            <a class="h6 blog-list col-md-8 offset-md-2 d-flex text-center" href="/pages" style="height: 100px;">
+                <h5>More Blogs</h5>
+            </a>
+        </div>
     </div>
 </section>
 
 
-
 <section id="graph">
     <div class="container text-center">
-        <h1>Graph</h1>
+        <h1 class="section-header">Graph</h1>
+        <hr>
         <div id="blog-graph" style="width: 900px;height:400px;"></div>
 
     </div>
 </section>
 
-
-
-<script
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+{% include footer.html %}
 <script src="/assets/js/echarts.min.js"></script>
 <script src="/assets/js/blog_graph.js"></script>
 

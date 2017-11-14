@@ -30,6 +30,21 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  post_categories:
+     output: true
+     permalink: /post_categories/:name
+
+plugins:
+  - jekyll-octicons
+
+defaults:
+  - scope:
+      path: ""
+      type: post_categories
+    values:
+      layout: categories
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

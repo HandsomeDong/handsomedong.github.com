@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categories:{{page.name}}</title>
+    {% include header.html %}
+    <link>
+</head>
+<body>
+{% include navbar.html %}
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="header">
+                    {{page.name}}
+                    <small class="text-muted">Category</small>
+                </h2>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<section id="posts">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for post in site.categories[page.name] %}
+                <a href="{{post.url}}" class="row cate-blog-list link-block">
+                    <div class="h4 col-md-12">
+                        <h4>{{post.title}}</h4>
+                    </div>
+                    <div class="offset-md-1 col-md-11">
+                        <p class="text-dark">{{post.date| date: '%B %d, %Y'}}</p>
+                    </div>
+                    <div class="offset-md-1 col-md-11 text-dark">
+                        <p class="">{{post.excerpt}}</p>
+                    </div>
+
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+{% include footer.html %}
+</body>
+</html>
