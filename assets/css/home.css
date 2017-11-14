@@ -86,3 +86,8 @@ align-items: center;
 #posts{
     min-height:550px;
 }
+
+#post{
+    min-height:450px;
+
+}

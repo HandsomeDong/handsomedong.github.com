@@ -49,8 +49,8 @@ relation = []
 for post in posts:
     if post['categories'] not in cate_count:
         cate_count[post['categories']] = 0
-    cate_count[post['categories']] += 5
-    graph_output.write(new_node(node_index, post['title'], '5', '0', '0', '0'))
+    cate_count[post['categories']] += 7
+    graph_output.write(new_node(node_index, post['title'], '7', '0', '0', '0'))
     name2index[post['title']] = node_index
     relation.append((post['title'], post['categories']))
     node_index += 1

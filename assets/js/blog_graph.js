@@ -17,7 +17,9 @@ $(function () {
         graph.nodes.forEach(function (node) {
             node.itemStyle = null;
             // node.symbolSize = 10;
-            node.value = node.symbolSize;
+            node.value = node.symbolSize/7;
+            node.symbolSize = node.symbolSize+10;
+
             node.category = node.attributes.modularity_class;
             // Use random x, y
             node.x = node.y = null;
@@ -34,7 +36,7 @@ $(function () {
             animation: false,
             series : [
                 {
-                    name: 'Les Miserables',
+                    // name: 'Les Miserables',
                     type: 'graph',
                     layout: 'force',
                     data: graph.nodes,
