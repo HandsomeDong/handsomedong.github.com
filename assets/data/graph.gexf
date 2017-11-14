@@ -10,32 +10,50 @@
     </attributes>
     <nodes>
 
- <node id="0" label=' "Welcome to Jekyll!"'>
+ <node id="0" label=' "django-channel Web服务布署文档!"'>
                   <attvalues>
                     <attvalue for="modularity_class" value="0"></attvalue>
                    </attvalues>
                    <viz:size value="7"></viz:size>
                    <viz:color r="0" g="0" b="0"></viz:color> 
-                 </node> <node id="1" label='Welcome'>
+                 </node> <node id="1" label=' "Welcome to my blog!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="7"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="2" label='Welcome'>
                   <attvalues>
                     <attvalue for="modularity_class" value="0"></attvalue>
                    </attvalues>
                    <viz:size value="7"></viz:size>
                    <viz:color r="100" g="100" b="100"></viz:color> 
-                 </node> <node id="2" label='root'>
+                 </node> <node id="3" label='Django'>
                   <attvalues>
                     <attvalue for="modularity_class" value="0"></attvalue>
                    </attvalues>
                    <viz:size value="7"></viz:size>
+                   <viz:color r="100" g="100" b="100"></viz:color> 
+                 </node> <node id="4" label='root'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="14"></viz:size>
                    <viz:color r="200" g="200" b="200"></viz:color> 
                  </node>
   </nodes>
                        <edges>
 
-          <edge id="0" source="0" target="1" weight="1">
+          <edge id="0" source="0" target="3" weight="1">
                    <attvalues></attvalues>
                  </edge>
           <edge id="1" source="1" target="2" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="2" source="2" target="4" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="3" source="3" target="4" weight="1">
                    <attvalues></attvalues>
                  </edge>
     </edges>

@@ -35,7 +35,7 @@
                         <p class="text-dark">{{post.date| date: '%B %d, %Y'}}</p>
                     </div>
                     <div class="offset-md-1 col-md-11 text-dark">
-                        <p class="">{{post.excerpt}}</p>
+                        <p class="">{{post.excerpt | strip_html}}</p>
                     </div>
 
                 </a>
