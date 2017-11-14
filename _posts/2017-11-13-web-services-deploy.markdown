@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "django-channel Web服务布署文档!"
+title:  "django-channel Web服务布署文档"
 date:   2017-11-13
 categories: Django
 ---
