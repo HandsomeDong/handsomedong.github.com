@@ -4,7 +4,7 @@ $(function () {
 // 指定图表的配置项和数据
 
     myChart.showLoading();
-    $.get('/assets/data/les-miserables.gexf', function (xml) {
+    $.get('/assets/data/graph.gexf', function (xml) {
         myChart.hideLoading();
 
         var graph = echarts.dataTool.gexf.parse(xml);

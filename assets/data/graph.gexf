@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes>
+    <nodes>
+
+ <node id="0" label=' "Some thing about docker!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="1" label=' "Wesd git!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="2" label=' "Wfefs git!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="3" label=' "Welcome to ai!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="4" label=' "Welcome to javascript!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="5" label=' "Welcome to Jekyll!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="6" label=' "Welcome to nlp!"'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="0" g="0" b="0"></viz:color> 
+                 </node> <node id="7" label='javascript'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="100" g="100" b="100"></viz:color> 
+                 </node> <node id="8" label='ai'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="100" g="100" b="100"></viz:color> 
+                 </node> <node id="9" label='docker'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="100" g="100" b="100"></viz:color> 
+                 </node> <node id="10" label='nlp'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="100" g="100" b="100"></viz:color> 
+                 </node> <node id="11" label='jekyll-update'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="5"></viz:size>
+                   <viz:color r="100" g="100" b="100"></viz:color> 
+                 </node> <node id="12" label='git'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="10"></viz:size>
+                   <viz:color r="100" g="100" b="100"></viz:color> 
+                 </node> <node id="13" label='root'>
+                  <attvalues>
+                    <attvalue for="modularity_class" value="0"></attvalue>
+                   </attvalues>
+                   <viz:size value="35"></viz:size>
+                   <viz:color r="200" g="200" b="200"></viz:color> 
+                 </node>
+  </nodes>
+                       <edges>
+
+          <edge id="0" source="0" target="9" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="1" source="1" target="12" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="2" source="2" target="12" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="3" source="3" target="8" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="4" source="4" target="7" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="5" source="5" target="11" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="6" source="6" target="10" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="7" source="7" target="13" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="8" source="8" target="13" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="9" source="9" target="13" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="10" source="10" target="13" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="11" source="11" target="13" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+          <edge id="12" source="12" target="13" weight="1">
+                   <attvalues></attvalues>
+                 </edge>
+    </edges>
+  </graph>
+</gexf>
