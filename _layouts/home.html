@@ -29,7 +29,7 @@
         <hr>
         <div class="row">
             {% for category in site.categories %}
-            <a class="h3 link-block col-md-3 d-flex vertical-center text-center" href="/post_categories/{{ category|first }}" style="height: 200px;">{{ category|first }}</a>
+            <a class="h3 link-block col-md-3 d-flex vertical-center text-center" href="/post_categories/{{ category|first|downcase  }}" style="height: 200px;">{{ category|first }}</a>
             {% endfor %}
         </div>
     </div>
