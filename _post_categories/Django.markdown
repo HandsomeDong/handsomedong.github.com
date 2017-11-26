@@ -1,3 +1,3 @@
 --- 
-name: Django 
+name: Django
 --- 
